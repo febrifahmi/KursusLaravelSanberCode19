@@ -49,6 +49,39 @@
         }
         // tampilkan data
         document.getElementById("rowCard").innerHTML = tampilkanData(items)  
+
+        // fungsi filter
+        function filterKey(key){
+            var hasilFiltering = [];
+            for (var i = 0; i < panjangdata; i++){
+                var item = items[i]                
+                var cekjudul = item[1].toLowerCase().includes(key.toLowerCase())
+                var cekdeskripsi = item[3].toLowerCase().includes(key.toLowerCase())
+                if ( cekjudul == true || cekdeskripsi == true ) {
+                    hasilFiltering.push(item)
+                }
+            }
+            return hasilFiltering
+        }
+
+        // menunggu user input di form search
+        var searchform = document.getElementById("formItem")
+        searchform.addEventListener("submit", function(e) {
+            e.preventDefault()
+
+            var keyword = document.getElementById("keyword").value
+            if ( keyword != "" ){
+                // to do
+                filteredData = filterKey(keyword)
+                panjangdata = filteredData.length
+                document.getElementById("rowCard").innerHTML = tampilkanData(filteredData)
+                panjangdata = items.length
+            } else {
+                location.reload()
+            }
+        })
+
+
     </script>
 <style type="text/css">
 #rowCard {
