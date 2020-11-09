@@ -47,7 +47,7 @@
         echo "<br>";
         echo "<ol>";
         foreach ($adults as &$value){
-            echo "Adults: <li>" .$value. "</li>.<br>";
+            echo "Adults: <li>" .$value. ".</li><br>";
         };
         // Lanjutkan
 
