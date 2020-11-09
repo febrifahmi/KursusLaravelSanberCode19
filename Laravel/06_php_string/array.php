@@ -52,10 +52,10 @@
         // Lanjutkan
 
         echo "</ol>";
-
+    
+        $aso = array(array("Name" => "Will Byers", "Age" => "12", "Aliases" => "Will the Wise", "Status" => "Alive"), array("Name" => "Mike Wheeler", "Age" => "12", "Aliases" => "Dungeon Master", "Status" => "Alive"), array("Name" => "Jim Hopper", "Age" => "43", "Aliases" => "Chief Hopper", "Status" => "Deceased"), array("Name" => "Eleven", "Age" => "12", "Aliases" => "El", "Status" => "Alive"));
        
-        @aso = array("Name" => array("Will Byers","Mike Wheeler","Jim Hopper","Eleven"), "Age" => array("12","12","43","12"), "Aliases" => array("Will the Wise","Dungeon Master","Chief Hopper","El"), "Status" => array("Alive","Alive","Deceased","Alive"));
-        echo $aso;
+        print_r($aso);
     ?>
 </body>
 </html>
