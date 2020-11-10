@@ -56,6 +56,20 @@
         // reverseString("abduh");
         // reverseString("Sanbercode");
         // reverseString("We Are Sanbers Developers")
+
+        function reverseString($data){
+            $panjangdata = strlen($data);
+            $reversed = "";
+            for ($i = $panjangdata-1; $i >= 0; $i--) {
+                $reversed .= $data[$i];
+            }
+            return $reversed."<br>";
+        }
+        
+        echo reverseString("abduh");
+        echo reverseString("Sanbercode");
+        echo reverseString("We Are Sanbers Developers");
+            
         echo "<br>";
 
         echo "<h3>Soal No 3 Palindrome </h3>";
@@ -75,12 +89,20 @@
 
 
         // Code function di sini
+        function palindrome($kata){
+            if (reverseString($kata) == $kata){
+                echo "Kata ".$kata." adalah palindrome<br>";
+            } else if (reverseString($kata) != $kata){
+                echo "Kata ".$kata." bukan palindrome<br>"; 
+            }
+        }
         
         // Hapus komentar di bawah ini untuk jalankan code
-        // palindrome("civic") ; // true
-        // palindrome("nababan") ; // true
-        // palindrome("jambaban"); // false
-        // palindrome("racecar"); // true
+        palindrome("civic") ; // true
+        palindrome("nababan") ; // true
+        palindrome("jambaban"); // false
+        palindrome("racecar"); // true
+
     ?>
 </body>
 </html>
