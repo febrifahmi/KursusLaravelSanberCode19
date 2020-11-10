@@ -99,7 +99,13 @@
             ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
         ];
         
-        // Output: 
+        // Output:
+        foreach ($items as $value) {
+             # code...
+            $hasil = array("id" => "".$value[0]."", "name" => "".$value[1]."", "price" => "".$value[2]."", "description" => "".$value[3]."", "source" => "".$value[4]."");
+            print_r($hasil);
+         };
+
         
         echo "<h3>Soal No 4 Asterix </h3>";
         /* 
@@ -114,7 +120,14 @@
             * * * * *
         */
         echo "Asterix: ";
-        echo "<br>";        
+        echo "<br>";
+        for ($i = 1; $i <= 5; $i++) {
+            echo "*";
+            for ($k = $i + 1; $k <=5;$k++){
+                echo "*";
+            };
+            echo "<br>";
+        }        
     ?>
 
 </body>
