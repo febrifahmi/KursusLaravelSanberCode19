@@ -121,13 +121,23 @@
         */
         echo "Asterix: ";
         echo "<br>";
-        for ($i = 1; $i <= 5; $i++) {
-            echo "*";
-            for ($k = $i + 1; $k <=5;$k++){
+        // solusi lain, tp asterik terbalik
+        // for ($i = 1; $i <= 5; $i++) {
+        //     echo "*";
+        //     for ($k = $i + 1; $k <=5;$k++){
+        //         echo "*";
+        //     };
+        //     echo "<br>";
+        // }
+
+        for ($i = 0; $i < 5; $i++) {
+            for ($k = 0; $k <= $i; $k++){
                 echo "*";
             };
             echo "<br>";
-        }        
+        }
+
+
     ?>
 
 </body>

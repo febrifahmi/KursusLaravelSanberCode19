@@ -63,11 +63,13 @@
             for ($i = $panjangdata-1; $i >= 0; $i--) {
                 $reversed .= $data[$i];
             }
-            return $reversed."<br>";
+            return $reversed;
         }
         
         echo reverseString("abduh");
+        echo "<br>";
         echo reverseString("Sanbercode");
+        echo "<br>";
         echo reverseString("We Are Sanbers Developers");
             
         echo "<br>";
@@ -90,9 +92,10 @@
 
         // Code function di sini
         function palindrome($kata){
-            if (reverseString($kata) == $kata){
+            $kebalikan = reverseString($kata);
+            if ( $kebalikan == $kata){
                 echo "Kata ".$kata." adalah palindrome<br>";
-            } else if (reverseString($kata) != $kata){
+            } elseif ($kebalikan != $kata){
                 echo "Kata ".$kata." bukan palindrome<br>"; 
             }
         }
