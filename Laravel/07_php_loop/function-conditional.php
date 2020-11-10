@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Function</title>
 </head>
 <body>
@@ -28,6 +28,12 @@
         // greetings("Wahyu");
         // greetings("Abdul");
 
+        function greetings($data){
+            echo "Halo ".$data.", Selamat Datang di Sanbercode!<br>";
+        };
+        echo greetings("Bagas");
+        echo greetings("Wahyu");
+        echo greetings("Abdul");
         echo "<br>";
         
         echo "<h3>Soal No 2 Reverse String</h3>";
