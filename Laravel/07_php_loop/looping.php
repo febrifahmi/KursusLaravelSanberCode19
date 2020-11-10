@@ -72,10 +72,12 @@
         echo "array numbers: ";
         print_r($numbers);
         // Lakukan Looping di sini
-
-        echo "<br>";
-        echo "Array sisa baginya adalah:  "; 
-        echo "<br>";
+        foreach ($numbers as $value){
+            $hasil = $value%5;
+            echo "<br>";
+            echo "Array sisa baginya adalah: ".$hasil."."; 
+            echo "<br>";
+        };
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
         /* 
