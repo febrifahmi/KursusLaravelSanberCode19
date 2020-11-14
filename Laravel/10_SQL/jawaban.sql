@@ -22,7 +22,8 @@ CREATE TABLE items (
 
 CREATE TABLE categories (
 	id int NOT NULL AUTO_INCREMENT,	
-	name varchar(255),		
+	name varchar(255),
+	PRIMARY KEY (id)		
 );
 
 INSERT INTO users (name, email, password) VALUES ("John Doe", "john@doe.com", "john123");   			/* Jawaban Soal 3 */

@@ -29,7 +29,8 @@ CREATE TABLE items (
 
 CREATE TABLE categories (
 	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255),			
+	name varchar(255),
+	PRIMARY KEY (id)			
 );
 
 Soal 3:
