@@ -39,13 +39,13 @@ Soal 3:
 INSERT INTO users (name, email, password) VALUES ("John Doe", "john@doe.com", "john123");   			/* Jawaban Soal 3 */
 INSERT INTO users (name, email, password) VALUES ("Jane Doe", "jane@doe.com", "jenita123");
 INSERT INTO categories (name) VALUES ("gadget"), ("cloth"), ("men"), ("women"), ("branded");
-INSERT INTO items (name, description, price, stock, category_id) VALUES ("Sumsang b50","hape keren dari merek sumsang","4000000","100", "1"), ("Uniklooh", "baju keren dari brand ternama", "500000", "50", "2"), ("IMHO Watch", "jam tangan anak yang jujur banget", "2000000", "10", "1")
+INSERT INTO items (name, description, price, stock, category_id) VALUES ("Sumsang b50","hape keren dari merek sumsang","4000000","100", "1"), ("Uniklooh", "baju keren dari brand ternama", "500000", "50", "2"), ("IMHO Watch", "jam tangan anak yang jujur banget", "2000000", "10", "1");
 
 
 Soal 4:
 --------
 
-SELECT id, name, email, FROM users;    /* Jawaban Soal 4 a */
+SELECT id, name, email FROM users;    /* Jawaban Soal 4 a */
 
 SELECT * FROM items WHERE price > 1000000;      /* Jawaban Soal 4 b */
 SELECT * FROM items WHERE name LIKE "uniklo";
