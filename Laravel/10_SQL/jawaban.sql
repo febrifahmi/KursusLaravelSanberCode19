@@ -1,5 +1,7 @@
 CREATE DATABASE myshop; /* Jawaban Soal 1 */
 
+USE myshop;
+
 CREATE TABLE users (
 	id int NOT NULL AUTO_INCREMENT,			/* Jawaban Soal 2 */
 	name varchar(255),
